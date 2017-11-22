@@ -1,0 +1,57 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Arsenal&subset=cyrillic,cyrillic-ext,latin-ext');
+
+// Import Bootstrap-Sass
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Import config of sass
+@import "./../../assets/scss/_variables.sass";
+@import "./../../assets/scss/_function.sass";
+@import "./../../assets/scss/_fonts.sass";
+@import "./../../assets/scss/_keyframes.sass";
+@import "./../../assets/scss/_mixins.sass";
+@import "../../assets/scss/_base64.sass";
+
+html:not([data-detected="macos"]) ::-webkit-scrollbar {
+  width: 6px
+}
+
+html:not([data-detected="macos"]) ::-webkit-scrollbar-thumb {
+  border-width: 0 0 0 0;
+  border-color: #777;
+  background-color: #aaa
+}
+
+html:not([data-detected="macos"]) ::-webkit-scrollbar-thumb:hover {
+  border-width: 0 0 0 0;
+  border-color: #ff3939;
+  background-color: #ff3939
+}
+
+html:not([data-detected="macos"]) ::-webkit-scrollbar-track {
+  border-width: 0
+}
+
+html:not([data-detected="macos"]) ::-webkit-scrollbar-track:hover {
+  background-color: #fff
+}
+*{
+  user-select: none;
+}
+html {
+  font-size: 16px;
+}
+body{
+  overflow-x: hidden;
+  overflow-y: auto;
+  min-width: 320px;
+  font-family: 'Arsenal', 'Segoe UI', sans-serif;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(247,247,247,1) 100%);
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(247,247,247,1) 100%);
+  background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(247,247,247,1) 100%);
+  background-attachment: fixed;
+}
+.reset-m-p {
+  padding: 0;
+  margin: 0;
+}

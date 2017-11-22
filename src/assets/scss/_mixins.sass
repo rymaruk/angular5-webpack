@@ -1,0 +1,15 @@
+// Transition
+@mixin transition($param: all, $delay: 0.1s)
+  -webkit-transition: $param, $delay
+  -moz-transition: $param, $delay
+  transition: $param, $delay
+
+// Mixin adds vendor prefixes to properties
+@mixin vendor($property, $value, $prefixes: ())
+  @each $prefix in $prefixes
+    #{'-' + $prefix + '-' + $property}: $value
+  #{$property}: $value
+
+@mixin wh($w, $h)
+  width: $w
+  height: $h

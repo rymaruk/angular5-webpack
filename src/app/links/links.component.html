@@ -1,0 +1,18 @@
+
+<div class="row">
+    <div class="col text-center">
+        Hello! It's simple project with an Angular 4 + Webpack!
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col">
+        <a *ngFor="let item of links; let i = index"
+           [href]="'//'+item.link" target="_blank">
+            <figure>
+                <figcaption>{{item.title}}<br><span class="site">{{item.link}}</span></figcaption>
+            </figure>
+        </a>
+    </div>
+
+</div>
