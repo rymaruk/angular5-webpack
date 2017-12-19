@@ -5,12 +5,10 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Import config of sass
-@import "./../../assets/scss/_variables.sass";
-@import "./../../assets/scss/_function.sass";
-@import "./../../assets/scss/_fonts.sass";
-@import "./../../assets/scss/_keyframes.sass";
-@import "./../../assets/scss/_mixins.sass";
-@import "../../assets/scss/_base64.sass";
+@import "./variables";
+@import "./function";
+@import "./keyframes";
+@import "./mixins";
 
 html:not([data-detected="macos"]) ::-webkit-scrollbar {
   width: 6px

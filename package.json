@@ -7,7 +7,7 @@
     "build": "rimraf dist && webpack --config config/webpack.prod.js --bail",
     "serve": "lite-server -c=bs-config.json",
     "prestart": "npm run build",
-    "start": "webpack-dev-server --inline --progress --port 4200",
+    "start": "webpack-dev-server --inline --progress --port 4220",
     "build:watch": "tsc -p src/ -w",
     "build:upgrade": "tsc",
     "serve:upgrade": "http-server",
